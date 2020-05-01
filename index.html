@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Conversor estrella - triángulo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <h1>Conversor estrella(Y) - triángulo(Δ)</h1>  
+    <form>
+        <div class="resistores-triangulo">
+            <label for="r-uno">R1 = </label>
+            <input id="r-uno" type="number" value="0">
+            <label for="r-dos">R2 = </label>
+            <input id="r-dos" type="number" value="0">
+            <label for="r-tres">R3 = </label>
+            <input id="r-tres" type="number" value="0">
+        </div>
+
+        <div class="resistores-estrella">
+            <label for="r-A">RA = </label>
+            <input id="r-A" type="number" value="0" disabled>
+            <label for="r-B">RB =</label>
+            <input id="r-B" type="number" value="0" disabled>
+            <label for="r-C">RC = </label>
+            <input id="r-C" type="number" value="0" disabled>
+        </div> 
+    </form>
+    <img
+         src="img/diagrama.svg" 
+         alt="Diagrama de conversión"/> <!-- Falta width y eight --> 
+
+    <button type="button" id="boton-triangulo-a-estrella">Δ --> Y</button>
+    <button type="button" id="boton-calcular">Calcular</button>
+    <button type="button" id="boton-estrella-a-triangulo">Y --> Δ</button>
+    
+    <script src='main.js'></script>
+</body>
+</html>
