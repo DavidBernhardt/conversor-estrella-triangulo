@@ -39,6 +39,8 @@ $botonEstrellaATriangulo.onclick = function(){
     $inputResistoresTriangulo = document.querySelectorAll (".resistores-triangulo input");
     $inputResistoresTriangulo.forEach(element => element.disabled = true);
 
+    document.querySelector("#diagrama").src = "img/estrella-triangulo.svg"
+
     return false;
 }
 
@@ -49,6 +51,8 @@ $botonTrianguloAEstrella.onclick = function(){
 
     $inputResistoresEstrella = document.querySelectorAll (".resistores-estrella input");
     $inputResistoresEstrella.forEach(element => element.disabled = true);
+
+    document.querySelector("#diagrama").src = "img/triangulo-estrella.svg"
 
     return false;
 }
